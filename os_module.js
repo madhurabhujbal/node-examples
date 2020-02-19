@@ -11,3 +11,6 @@ console.log('Total memory: '+os.totalmem());
 
 //Free computer memory
 console.log('Free memory: '+os.freemem());
+
+//check for home directory
+console.log('Home directory: '+os.homedir());
