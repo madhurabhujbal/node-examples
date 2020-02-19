@@ -7,20 +7,26 @@ const path = require('path');
 //     console.log('Folder created');
 // });
 
-//create and write in file
-fs.writeFile(path.join(__dirname, 'test', 'hello.txt' ),
+// //create and write in folder
+// fs.writeFile(path.join(__dirname, 'test', 'hello.txt' ),
+// 'Hello World!!',
+// err=>{
+//     if (err) throw err;
+//     console.log('Content written in file');
+// });
+
+//create and write in file using writeFile
+fs.writeFile('helloworld.txt',
 'Hello World!!',
 err=>{
     if (err) throw err;
     console.log('Content written in file');
 });
 
-//write in file without creating folder
-fs.writeFile('hello.txt',
-'Hello World!!',
+//add or append content in existing file
+fs.appendFile('helloworld.txt',
+'\nWelcome to this world everyone!!',
 err=>{
     if (err) throw err;
     console.log('Content written in file');
 });
-
-
