@@ -30,3 +30,17 @@ err=>{
     if (err) throw err;
     console.log('Content written in file');
 });
+
+//Read file content created in folder
+fs.readFile(path.join(__dirname, 'test', 'hello.txt' ), 'utf8',
+ (err, data)=>{
+    if (err) throw err;
+    console.log(data);
+})
+
+//read file content
+fs.readFile('helloworld.txt', 'utf8',
+(err, data)=>{
+    if (err) throw err;
+    console.log(data);
+});
