@@ -8,12 +8,12 @@ const path = require('path');
 // });
 
 // //create and write in folder
-// fs.writeFile(path.join(__dirname, 'test', 'hello.txt' ),
-// 'Hello World!!',
-// err=>{
-//     if (err) throw err;
-//     console.log('Content written in file');
-// });
+fs.writeFile(path.join(__dirname, 'test', 'hello.txt' ),
+'Hello World!!',
+err=>{
+    if (err) throw err;
+    console.log('Content written in file');
+});
 
 //create and write in file using writeFile
 fs.writeFile('helloworld.txt',
@@ -43,4 +43,12 @@ fs.readFile('helloworld.txt', 'utf8',
 (err, data)=>{
     if (err) throw err;
     console.log(data);
+});
+
+//rename file
+fs.rename(( 'helloworld.txt' ),
+('helloWorld.txt'),
+err=>{
+    if (err) throw err;
+    console.log('File renamed');
 });
