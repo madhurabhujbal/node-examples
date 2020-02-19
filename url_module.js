@@ -12,5 +12,11 @@ console.log(myURL.host);
 //hostname, returns everything same as host except the port number
 console.log('hostname: '+myURL.hostname);
 
-//Pathname
+//Pathname returns everthing between '/' and '?' in url
 console.log('pathname: '+myURL.pathname);
+
+//Serialized query..returns everything after '?' in the url
+console.log(myURL.search);
+
+//Get url parameters
+console.log('parameters in url: '+myURL.searchParams);
