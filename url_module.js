@@ -20,3 +20,9 @@ console.log(myURL.search);
 
 //Get url parameters
 console.log('parameters in url: '+myURL.searchParams);
+
+//Add parameters
+myURL.searchParams.append('abc', '123');
+myURL.searchParams.append('lock', '345');
+console.log(myURL.searchParams);
+console.log(myURL.toString());
