@@ -1,6 +1,6 @@
 const url = require('url');
 
-const myURL = new URL('https://www.google.com:8080/');
+const myURL = new URL('https://www.youtube.com:8080/watch?v=fBNz5xF-Kx4');
 
 //getting serialized url
 console.log(myURL.href);
@@ -10,4 +10,7 @@ console.log(myURL.toString());
 console.log(myURL.host);
 
 //hostname, returns everything same as host except the port number
-console.log(myURL.hostname);
+console.log('hostname: '+myURL.hostname);
+
+//Pathname
+console.log('pathname: '+myURL.pathname);
