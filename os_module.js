@@ -13,4 +13,7 @@ console.log('Total memory: '+os.totalmem());
 console.log('Free memory: '+os.freemem());
 
 //check for home directory
-console.log('Home directory: '+os.homedir());
+console.log('Home directory: '+os.homedir);
+
+//checking uptime
+console.log('Uptime: '+os.uptime);
