@@ -1,0 +1,26 @@
+{
+  "name": "node_demos",
+  "version": "1.0.0",
+  "description": "This is the example node project",
+  "main": "event_example.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhurabhujbal/node-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/madhurabhujbal/node-examples/issues"
+  },
+  "homepage": "https://github.com/madhurabhujbal/node-examples#readme"
+}
